@@ -1,45 +1,77 @@
-## Amazon Sales Analysis
+# 📊 Amazon Sales Analysis
 
-Project Overview
-This project focuses on performing end-to-end exploratory data analysis (EDA), data cleaning, feature engineering, visualization, and business insight extraction using an Amazon Sales dataset.
-The goal of this project is to simulate a real-world e-commerce analytics workflow by analyzing product pricing, discounts, ratings, customer engagement, and category-level trends.
-This project was built as part of a professional Data Analytics portfolio using Python, VS Code, Git, and GitHub.
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-blue)
+![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black?logo=github)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Objectives (The primary objectives of this project are):
-* Clean and preprocess a real-world e-commerce dataset
-* Perform exploratory data analysis (EDA)
-* Analyze Amazon discount strategies
-* Investigate relationships between pricing, discounts, ratings, and popularity
-* Generate business insights from data
-* Create professional visualizations
-* Build a portfolio-ready analytics project
-* Dataset Information
+---
 
-Dataset Source:
-Amazon Sales Dataset from Kaggle
+# 📌 Project Overview
 
-Dataset contains:
-* Product information
-* Product categories
-* Actual prices
-* Discounted prices
-* Discount percentages
-* Product ratings
-* Customer review counts
-* Review text data
-* Product links and images
-* Tools & Technologies Used
-* Tool	Purpose
-* Python	Data analysis
-* Pandas	Data cleaning and preprocessing
-* NumPy	Numerical operations
-* Matplotlib	Data visualization
-* Seaborn	Statistical visualization
-* VS Code	Development environment
-* Git & GitHub	Version control
-* Jupyter Notebook	Interactive analysis
-* Project Structure
-```
+This project performs an **end-to-end Exploratory Data Analysis (EDA)** on an Amazon Sales dataset. The analysis simulates a real-world e-commerce analytics workflow by cleaning raw data, engineering useful features, creating professional visualizations, and extracting business insights.
+
+The project showcases practical data analytics skills using **Python**, **Pandas**, **NumPy**, **Matplotlib**, and **Seaborn**, making it an excellent portfolio project for aspiring Data Analysts.
+
+---
+
+# 🎯 Project Objectives
+
+The primary objectives of this project are to:
+
+- Clean and preprocess a real-world e-commerce dataset
+- Perform Exploratory Data Analysis (EDA)
+- Analyze Amazon discount strategies
+- Investigate relationships between pricing, discounts, ratings, and popularity
+- Generate actionable business insights
+- Create professional visualizations
+- Build a portfolio-ready data analytics project
+
+---
+
+# 📂 Dataset Information
+
+### Dataset Source
+
+**Amazon Sales Dataset** from Kaggle
+
+### Dataset Includes
+
+- Product information
+- Product categories
+- Actual prices
+- Discounted prices
+- Discount percentages
+- Product ratings
+- Customer review counts
+- Customer review text
+- Product links
+- Product images
+
+---
+
+# 🛠 Tools & Technologies Used
+
+| Tool | Purpose |
+|------|----------|
+| Python | Data Analysis |
+| Pandas | Data Cleaning & Manipulation |
+| NumPy | Numerical Operations |
+| Matplotlib | Data Visualization |
+| Seaborn | Statistical Visualization |
+| VS Code | Development Environment |
+| Jupyter Notebook | Interactive Analysis |
+| Git | Version Control |
+| GitHub | Project Hosting & Portfolio |
+
+---
+
+# 📁 Project Structure
+
+```text
 amazon-sales-analysis/
 │
 ├── data/
@@ -64,178 +96,287 @@ amazon-sales-analysis/
 └── .gitignore
 ```
 
-Data Cleaning & Preprocessing
-Several preprocessing steps were performed to prepare the dataset for analysis.
+---
 
-Cleaning Tasks Performed
-1. Currency Symbol Removal
+# 🧹 Data Cleaning & Preprocessing
 
-Columns such as:
+Several preprocessing techniques were applied to transform the raw dataset into an analysis-ready format.
 
-discounted_price
-actual_price
+## ✔ Currency Symbol Removal
 
-contained currency symbols and commas.
+The following columns contained currency symbols (`₹`) and commas.
+
+- `discounted_price`
+- `actual_price`
 
 Example:
 
+```
 ₹1,299
+```
 
-These values were cleaned and converted into numeric format.
+These values were converted into numeric format.
 
-2. Discount Percentage Cleaning
+---
 
-Discount percentage values contained % signs.
+## ✔ Discount Percentage Cleaning
+
+Discount values originally contained percentage symbols.
 
 Example:
 
+```
 53%
+```
 
-The symbols were removed and converted into float values.
+The `%` symbol was removed and values were converted to numeric format.
 
-3. Rating Count Cleaning
+---
 
-Rating counts containing commas were cleaned and converted into numeric values.
+## ✔ Rating Count Cleaning
+
+Rating counts contained commas.
 
 Example:
 
+```
 12,345
-4. Missing Value Handling
+```
 
-Missing values were identified and removed where necessary.
+They were cleaned and converted into integer values.
 
-5. Feature Engineering
+---
 
-Additional analytical features were created:
+## ✔ Missing Value Handling
 
-Feature	Description
-category_encoded	Encoded category labels
-product_name_length	Length of product title
-review_length	Length of customer review text
-main_category	Simplified top-level category
-Exploratory Data Analysis (EDA)
+- Identified missing values
+- Removed or handled incomplete records where appropriate
 
-Extensive exploratory data analysis was conducted to understand pricing behavior, customer engagement, and discount strategies.
+---
 
-Correlation Analysis
+## ✔ Feature Engineering
 
-A professional correlation heatmap was created using engineered numerical features.
+Additional analytical features were created.
 
-Key Findings
-Actual price and discounted price show extremely high positive correlation.
-Discount percentage has weak negative correlation with ratings.
-Review length shows moderate relationship with product prices.
-Discounts alone do not strongly influence product ratings.
-Category Analysis
+| Feature | Description |
+|----------|-------------|
+| category_encoded | Encoded category labels |
+| product_name_length | Length of product title |
+| review_length | Length of review text |
+| main_category | Simplified top-level category |
 
-Top product categories were analyzed using grouped category visualizations.
+---
 
-Key Findings
-Electronics and technology-related products dominate the marketplace.
-Home Improvement products receive the highest average discounts.
-Office Products and Toys & Games receive relatively lower discounts.
-Technology markets appear highly competitive and promotion-driven.
-Discount Analysis
+# 📈 Exploratory Data Analysis (EDA)
 
-The project investigated Amazon's discounting behavior and pricing strategy.
+The project investigates pricing behavior, customer engagement, discounts, ratings, and product categories.
 
-Discount Statistics
-Metric	Value
-Average Discount	47.69%
-Median Discount	50%
-Maximum Discount	94%
-Minimum Discount	0%
-Business Insights
-Amazon relies heavily on promotional pricing strategies.
-Most products receive medium-to-high discounts.
-Several categories use aggressive discounting to compete in the market.
-High discounts alone do not guarantee better ratings.
-Popularity & Customer Engagement Analysis
+---
 
-Customer engagement was analyzed using rating counts as a popularity metric.
+# 🔥 Correlation Analysis
 
-Key Findings
-Products with medium-to-high discounts often receive higher engagement.
-The relationship between discounts and popularity is not perfectly linear.
-Product quality and customer trust likely influence engagement more strongly than discounts alone.
-Visualizations Created
+A professional correlation heatmap was created using engineered numerical variables.
 
-The following visualizations were created during the project:
+## Key Findings
 
-Correlation Heatmap
-Advanced Correlation Heatmap
-Top Product Categories
-Discount Distribution Histogram
-Discount Percentage vs Rating Scatterplot
-Discount Percentage vs Rating Count Scatterplot
-Category-wise Average Discount Analysis
-Review Length Distribution
-Business Questions Answered
+- Actual Price and Discounted Price have an extremely strong positive correlation.
+- Discount Percentage shows a weak negative correlation with ratings.
+- Review Length has a moderate relationship with product prices.
+- Discounts alone do not strongly influence customer ratings.
 
-This project explored several important business questions:
+---
 
-Are most products heavily discounted?
-Is Amazon using aggressive discount strategies?
-Do higher discounts improve product ratings?
-Which categories receive the highest discounts?
-Do expensive products receive larger discounts?
-Do discounts increase customer engagement?
-Key Business Insights
-Amazon products are heavily dependent on discount-driven pricing.
-Technology-related categories experience intense pricing competition.
-Discounts increase visibility and engagement but do not guarantee customer satisfaction.
-Customer ratings are influenced by factors beyond pricing.
-Several premium products use high discounting strategies to improve conversions.
-Future Improvements
+# 🏷 Category Analysis
 
-Potential future improvements for this project include:
+Product categories were grouped and analyzed to understand pricing strategies.
 
-Interactive Power BI dashboard
-SQL-based analysis
-Customer sentiment analysis using NLP
-Machine learning prediction models
-Time-series sales forecasting
-Product recommendation systems
-How to Run This Project
-1. Clone Repository
+## Key Findings
+
+- Electronics and technology products dominate the marketplace.
+- Home Improvement products receive the highest average discounts.
+- Office Products and Toys & Games receive relatively smaller discounts.
+- Technology markets appear highly competitive and promotion-driven.
+
+---
+
+# 💸 Discount Analysis
+
+The project explores Amazon's pricing strategy through discount behavior.
+
+## Discount Statistics
+
+| Metric | Value |
+|---------|-------|
+| Average Discount | **47.69%** |
+| Median Discount | **50%** |
+| Maximum Discount | **94%** |
+| Minimum Discount | **0%** |
+
+### Business Insights
+
+- Amazon heavily relies on promotional pricing.
+- Most products receive medium-to-high discounts.
+- Several categories use aggressive discounting strategies.
+- Higher discounts do not necessarily result in better ratings.
+
+---
+
+# ⭐ Popularity & Customer Engagement Analysis
+
+Customer engagement was analyzed using product rating counts.
+
+## Key Findings
+
+- Medium-to-high discounted products often receive greater engagement.
+- The relationship between discounts and popularity is not perfectly linear.
+- Product quality and customer trust have a stronger influence than discounts alone.
+
+---
+
+# 📊 Visualizations Created
+
+The project includes the following visualizations:
+
+- Correlation Heatmap
+- Advanced Correlation Heatmap
+- Top Product Categories
+- Discount Distribution Histogram
+- Discount Percentage vs Rating Scatter Plot
+- Discount Percentage vs Rating Count Scatter Plot
+- Category-wise Average Discount Analysis
+- Review Length Distribution
+
+---
+
+# ❓ Business Questions Answered
+
+This project answers several practical business questions:
+
+- Are most Amazon products heavily discounted?
+- Is Amazon using aggressive pricing strategies?
+- Do higher discounts improve customer ratings?
+- Which categories receive the highest discounts?
+- Do expensive products receive larger discounts?
+- Do discounts increase customer engagement?
+
+---
+
+# 💡 Key Business Insights
+
+- Amazon heavily depends on discount-driven pricing strategies.
+- Technology-related categories experience intense price competition.
+- Discounts improve product visibility and engagement.
+- Customer satisfaction depends on factors beyond pricing.
+- Premium products also use aggressive discounts to increase conversions.
+
+---
+
+# 🚀 Future Improvements
+
+Possible extensions of this project include:
+
+- Interactive Power BI Dashboard
+- SQL-Based Analysis
+- Customer Sentiment Analysis (NLP)
+- Machine Learning Prediction Models
+- Sales Forecasting
+- Product Recommendation System
+
+---
+
+# ▶ How to Run This Project
+
+## 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/indra-swe/amazon-sales-analysis.git
-2. Navigate to Project Directory
+```
+
+---
+
+## 2️⃣ Navigate to the Project Directory
+
+```bash
 cd amazon-sales-analysis
-3. Create Virtual Environment
+```
+
+---
+
+## 3️⃣ Create a Virtual Environment
+
+```bash
 python -m venv venv
-4. Activate Environment
-Windows
+```
+
+---
+
+## 4️⃣ Activate the Environment
+
+### Windows
+
+```powershell
 .\venv\Scripts\Activate.ps1
-5. Install Requirements
+```
+
+### macOS / Linux
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## 5️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-6. Run Notebook
+```
+
+---
+
+## 6️⃣ Launch the Notebook
 
 Open:
 
+```
 notebooks/amazon-data-analysis.ipynb
-Skills Demonstrated
+```
 
-This project demonstrates practical skills in:
+---
 
-Data Cleaning
-Exploratory Data Analysis
-Feature Engineering
-Statistical Analysis
-Business Analytics
-Data Visualization
-Git & GitHub Workflow
-Analytical Storytelling
-Portfolio Development
-Author
+# 💼 Skills Demonstrated
 
-Indra
+This project showcases practical skills in:
+
+- Data Cleaning
+- Data Preprocessing
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Statistical Analysis
+- Business Analytics
+- Data Visualization
+- Git & GitHub Workflow
+- Analytical Storytelling
+- Portfolio Development
+
+---
+
+# 👨‍💻 Author
+
+**Badhon Indra**
 
 GitHub:
 
 https://github.com/indra-swe
 
-Conclusion
+---
 
-This project demonstrates a complete beginner-to-intermediate level data analytics workflow using a real-world e-commerce dataset.
+# 📜 Conclusion
 
-The analysis provides insights into Amazon's pricing strategies, customer engagement behavior, and category-level competition while showcasing practical analytical and visualization skills.
+This project demonstrates a complete beginner-to-intermediate level data analytics workflow using a real-world Amazon e-commerce dataset.
+
+The analysis provides valuable insights into Amazon's pricing strategy, customer engagement, and category-level competition while showcasing practical data analysis, visualization, and storytelling skills suitable for a professional data analytics portfolio.
+
+---
+
+⭐ **If you found this project helpful, consider giving it a star!**
