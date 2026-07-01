@@ -46,6 +46,7 @@ VS Code	Development environment
 Git & GitHub	Version control
 Jupyter Notebook	Interactive analysis
 Project Structure
+```
 amazon-sales-analysis/
 │
 ├── data/
@@ -68,6 +69,7 @@ amazon-sales-analysis/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
+```
 Data Cleaning & Preprocessing
 
 Several preprocessing steps were performed to prepare the dataset for analysis.
