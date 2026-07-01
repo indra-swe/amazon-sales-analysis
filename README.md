@@ -1,51 +1,44 @@
-Amazon Sales Analysis
+## Amazon Sales Analysis
+
 Project Overview
-
 This project focuses on performing end-to-end exploratory data analysis (EDA), data cleaning, feature engineering, visualization, and business insight extraction using an Amazon Sales dataset.
-
 The goal of this project is to simulate a real-world e-commerce analytics workflow by analyzing product pricing, discounts, ratings, customer engagement, and category-level trends.
-
 This project was built as part of a professional Data Analytics portfolio using Python, VS Code, Git, and GitHub.
 
-Objectives
-
-The primary objectives of this project are:
-
-Clean and preprocess a real-world e-commerce dataset
-Perform exploratory data analysis (EDA)
-Analyze Amazon discount strategies
-Investigate relationships between pricing, discounts, ratings, and popularity
-Generate business insights from data
-Create professional visualizations
-Build a portfolio-ready analytics project
-Dataset Information
+Objectives (The primary objectives of this project are):
+* Clean and preprocess a real-world e-commerce dataset
+* Perform exploratory data analysis (EDA)
+* Analyze Amazon discount strategies
+* Investigate relationships between pricing, discounts, ratings, and popularity
+* Generate business insights from data
+* Create professional visualizations
+* Build a portfolio-ready analytics project
+* Dataset Information
 
 Dataset Source:
-
 Amazon Sales Dataset from Kaggle
 
 Dataset contains:
-
-Product information
-Product categories
-Actual prices
-Discounted prices
-Discount percentages
-Product ratings
-Customer review counts
-Review text data
-Product links and images
-Tools & Technologies Used
-Tool	Purpose
-Python	Data analysis
-Pandas	Data cleaning and preprocessing
-NumPy	Numerical operations
-Matplotlib	Data visualization
-Seaborn	Statistical visualization
-VS Code	Development environment
-Git & GitHub	Version control
-Jupyter Notebook	Interactive analysis
-Project Structure
+* Product information
+* Product categories
+* Actual prices
+* Discounted prices
+* Discount percentages
+* Product ratings
+* Customer review counts
+* Review text data
+* Product links and images
+* Tools & Technologies Used
+* Tool	Purpose
+* Python	Data analysis
+* Pandas	Data cleaning and preprocessing
+* NumPy	Numerical operations
+* Matplotlib	Data visualization
+* Seaborn	Statistical visualization
+* VS Code	Development environment
+* Git & GitHub	Version control
+* Jupyter Notebook	Interactive analysis
+* Project Structure
 ```
 amazon-sales-analysis/
 │
@@ -70,8 +63,8 @@ amazon-sales-analysis/
 ├── README.md
 └── .gitignore
 ```
-Data Cleaning & Preprocessing
 
+Data Cleaning & Preprocessing
 Several preprocessing steps were performed to prepare the dataset for analysis.
 
 Cleaning Tasks Performed
